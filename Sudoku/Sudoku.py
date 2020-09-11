@@ -1,11 +1,14 @@
-#import random
+import random
 
 bloque_01 = {
-  'a1' : 1, 'b1' : 2, 'c1' : 3, 
-  'a2' : 4, 'b2' : 5, 'c2' : 6,
-  'a3' : 7, 'b3' : 8, 'c3' : 9,
+  'a1' : 0, 'b1' : 0, 'c1' : 0, 
+  'a2' : 0, 'b2' : 0, 'c2' : 0,
+  'a3' : 0, 'b3' : 0, 'c3' : 0,
 }
 
+num_rand = random.randint(1,9)
+
+bloque_01['a1'] = num_rand
 
 print('╔═════╦')
 print('║'+str(bloque_01['a1'])+'│'+str(bloque_01['b1'])+'│'+str(bloque_01['c1'])+'║')
