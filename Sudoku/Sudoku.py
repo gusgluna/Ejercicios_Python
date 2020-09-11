@@ -8,10 +8,22 @@ bloque_01 = {
 
 num_rand = random.randint(1,9)
 bloque_01['a1'] = num_rand
-num_rand = random.randint(1,9)
-if num_rand != bloque_01['a1']:
-  bloque_01['b1'] = num_rand
 
+num_rand = random.randint(1,9)
+
+while num_rand == bloque_01['a1']:
+  num_rand = random.randint(1,9)
+
+bloque_01['b1'] = num_rand
+
+tup_01 = (bloque_01['a1'], bloque_01['b1'])
+
+num_rand = random.randint(1,9)
+
+while num_rand in tup_01:
+  num_rand = random.randint(1,9)
+
+bloque_01['c1'] = num_rand
 
 
 
