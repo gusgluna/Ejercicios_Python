@@ -7,8 +7,13 @@ bloque_01 = {
 }
 
 num_rand = random.randint(1,9)
-
 bloque_01['a1'] = num_rand
+num_rand = random.randint(1,9)
+if num_rand != bloque_01['a1']:
+  bloque_01['b1'] = num_rand
+
+
+
 
 print('╔═════╦')
 print('║'+str(bloque_01['a1'])+'│'+str(bloque_01['b1'])+'│'+str(bloque_01['c1'])+'║')
