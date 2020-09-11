@@ -175,6 +175,46 @@ while num_rand in tup_comp:
   num_rand = random.randint(1,9)
 sud['g2'] = num_rand
 
+#Definiendo el valor de h2
+tup_comp = (sud['a2'], sud['b2'],
+sud['c2'], sud['d2'], sud['e2'], sud['f2'], sud['g1'], sud['h1'], sud['i1'], sud['g2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+sud['h2'] = num_rand
+
+#Definiendo el valor de i2
+tup_comp = (sud['a2'], sud['b2'],
+sud['c2'], sud['d2'], sud['e2'], sud['f2'], sud['g1'], sud['h1'], sud['i1'], sud['g2'], sud['h2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+sud['i2'] = num_rand
+
+#Definiendo el valor de g3
+tup_comp = (sud['a3'], sud['b3'],
+sud['c3'], sud['d3'], sud['e3'], sud['f3'], sud['g1'], sud['h1'], sud['i1'], sud['g2'], sud['h2'], sud['i2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+sud['g3'] = num_rand
+
+#Definiendo el valor de h3
+tup_comp = (sud['a3'], sud['b3'],
+sud['c3'], sud['d3'], sud['e3'], sud['f3'], sud['g1'], sud['h1'], sud['i1'], sud['g2'], sud['h2'], sud['i2'], sud['g3'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+sud['h3'] = num_rand
+
+#Definiendo el valor de i3
+tup_comp = (sud['a3'], sud['b3'],
+sud['c3'], sud['d3'], sud['e3'], sud['f3'], sud['g1'], sud['h1'], sud['i1'], sud['g2'], sud['h2'], sud['i2'], sud['g3'], sud['h3'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+sud['i3'] = num_rand
+
 
 
 
@@ -192,4 +232,3 @@ print('3║'+str(sud['a3'])+'│'+str(sud['b3'])+'│'+str(sud['c3'])+'║'+str(
 print(' ╠═════╬═════╬═════╣')
 
 print('4║')
-
