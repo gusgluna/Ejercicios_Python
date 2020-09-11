@@ -111,6 +111,23 @@ while num_rand in tup_comp:
   num_rand = random.randint(1,9)
 bloque_01['e2'] = num_rand
 
+#Definiendo el valor de f2
+tup_comp = (bloque_01['a2'], bloque_01['b2'],
+bloque_01['c2'], bloque_01['d1'], bloque_01['e1'], bloque_01['f1'], bloque_01['d2'], bloque_01['e2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+bloque_01['f2'] = num_rand
+
+#Definiendo el valor de d3
+tup_comp = (bloque_01['a3'], bloque_01['b3'],
+bloque_01['c3'], bloque_01['d1'], bloque_01['e1'], bloque_01['f1'], bloque_01['d2'], bloque_01['e2'], bloque_01['f2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+bloque_01['d3'] = num_rand
+
+
 
 print('╔═════╦═════╦')
 print('║'+str(bloque_01['a1'])+'│'+str(bloque_01['b1'])+'│'+str(bloque_01['c1'])+'║'+str(bloque_01['d1'])+'│'+str(bloque_01['e1'])+'│'+str(bloque_01['f1'])+'║')
