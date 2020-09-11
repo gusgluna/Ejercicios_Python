@@ -39,6 +39,39 @@ while num_rand in tup_comp:
   num_rand = random.randint(1,9)
 bloque_01['b2'] = num_rand
 
+#Definiendo el valor de c2
+tup_comp = (bloque_01['a1'], bloque_01['b1'],
+bloque_01['c1'], bloque_01['a2'], bloque_01['b2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+bloque_01['c2'] = num_rand
+
+#Definiendo el valor de a3
+tup_comp = (bloque_01['a1'], bloque_01['b1'],
+bloque_01['c1'], bloque_01['a2'], bloque_01['b2'],bloque_01['c2'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+bloque_01['a3'] = num_rand
+
+#Definiendo el valor de b3
+tup_comp = (bloque_01['a1'], bloque_01['b1'],
+bloque_01['c1'], bloque_01['a2'], bloque_01['b2'],bloque_01['c2'],bloque_01['a3'])
+num_rand = random.randint(1,9)
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+bloque_01['b3'] = num_rand
+
+#Definiendo el valor de c3
+tup_comp = (bloque_01['a1'], bloque_01['b1'],
+bloque_01['c1'], bloque_01['a2'], bloque_01['b2'],bloque_01['c2'],bloque_01['a3'],bloque_01['b3'])
+num_rand = 1
+while num_rand in tup_comp:
+  num_rand = num_rand + 1
+bloque_01['c3'] = num_rand
+
+
 
 
 print('╔═════╦')
