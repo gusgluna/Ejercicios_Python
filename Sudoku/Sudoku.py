@@ -16,15 +16,24 @@ while num_rand == bloque_01['a1']:
 
 bloque_01['b1'] = num_rand
 
-tup_01 = (bloque_01['a1'], bloque_01['b1'])
+tup_comp = (bloque_01['a1'], bloque_01['b1'])
 
 num_rand = random.randint(1,9)
 
-while num_rand in tup_01:
+while num_rand in tup_comp:
   num_rand = random.randint(1,9)
 
 bloque_01['c1'] = num_rand
 
+tup_comp = (bloque_01['a1'], bloque_01['b1'],
+bloque_01['c1'])
+
+num_rand = random.randint(1,9)
+
+while num_rand in tup_comp:
+  num_rand = random.randint(1,9)
+
+bloque_01['a2'] = num_rand
 
 
 print('╔═════╦')
@@ -34,6 +43,3 @@ print('║'+str(bloque_01['a2'])+'│'+str(bloque_01['b2'])+'│'+str(bloque_01[
 
 print('║'+str(bloque_01['a3'])+'│'+str(bloque_01['b3'])+'│'+str(bloque_01['c3'])+'║')
 print('╚═════╬')
-
-"""rand = random.randint(1,9)
-print(rand)"""
