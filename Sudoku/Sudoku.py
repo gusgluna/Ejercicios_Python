@@ -3,7 +3,7 @@ import random
 bloque_01 = {
   'a1' : 0, 'b1' : 0, 'c1' : 0, 'd1' : 1, 'e1' : 2, 'f1' : 3,
   'a2' : 0, 'b2' : 0, 'c2' : 0, 'd2' : 4, 'e2' : 5, 'f2' : 6,
-  'a3' : 0, 'b3' : 0, 'c3' : 0,
+  'a3' : 0, 'b3' : 0, 'c3' : 0, 'd3' : 7, 'e3' : 8, 'f3' : 9,
 }
 
 #Definiendo el valor de a1
@@ -79,5 +79,5 @@ print('║'+str(bloque_01['a1'])+'│'+str(bloque_01['b1'])+'│'+str(bloque_01[
 
 print('║'+str(bloque_01['a2'])+'│'+str(bloque_01['b2'])+'│'+str(bloque_01['c2'])+'║'+str(bloque_01['d2'])+'│'+str(bloque_01['e2'])+'│'+str(bloque_01['f2'])+'║')
 
-print('║'+str(bloque_01['a3'])+'│'+str(bloque_01['b3'])+'│'+str(bloque_01['c3'])+'║')
-print('╚═════╬')
+print('║'+str(bloque_01['a3'])+'│'+str(bloque_01['b3'])+'│'+str(bloque_01['c3'])+'║'+str(bloque_01['d3'])+'│'+str(bloque_01['e3'])+'│'+str(bloque_01['f3'])+'║')
+print('╚═════╬═════╬')
