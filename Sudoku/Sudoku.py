@@ -143,11 +143,11 @@ while num_rand in tup_comp:
   num_rand = random.randint(1,9)
 bloque_01['f3'] = num_rand
 
+print('  a b c d e f g h i')
+print(' ╔═════╦═════╦═════╗')
+print('1║'+str(bloque_01['a1'])+'│'+str(bloque_01['b1'])+'│'+str(bloque_01['c1'])+'║'+str(bloque_01['d1'])+'│'+str(bloque_01['e1'])+'│'+str(bloque_01['f1'])+'║')
 
-print('╔═════╦═════╦')
-print('║'+str(bloque_01['a1'])+'│'+str(bloque_01['b1'])+'│'+str(bloque_01['c1'])+'║'+str(bloque_01['d1'])+'│'+str(bloque_01['e1'])+'│'+str(bloque_01['f1'])+'║')
+print('2║'+str(bloque_01['a2'])+'│'+str(bloque_01['b2'])+'│'+str(bloque_01['c2'])+'║'+str(bloque_01['d2'])+'│'+str(bloque_01['e2'])+'│'+str(bloque_01['f2'])+'║')
 
-print('║'+str(bloque_01['a2'])+'│'+str(bloque_01['b2'])+'│'+str(bloque_01['c2'])+'║'+str(bloque_01['d2'])+'│'+str(bloque_01['e2'])+'│'+str(bloque_01['f2'])+'║')
-
-print('║'+str(bloque_01['a3'])+'│'+str(bloque_01['b3'])+'│'+str(bloque_01['c3'])+'║'+str(bloque_01['d3'])+'│'+str(bloque_01['e3'])+'│'+str(bloque_01['f3'])+'║')
-print('╚═════╬═════╬')
+print('3║'+str(bloque_01['a3'])+'│'+str(bloque_01['b3'])+'│'+str(bloque_01['c3'])+'║'+str(bloque_01['d3'])+'│'+str(bloque_01['e3'])+'│'+str(bloque_01['f3'])+'║')
+print(' ╚═════╬═════╬')
