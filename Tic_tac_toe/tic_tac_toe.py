@@ -1,19 +1,26 @@
 import os
 import time
-def borrarPantalla(): #Definimos la función estableciendo el nombre que queramos
+ #Funcion que detecta el sistema operativo y borra la consola
+def borrarPantalla():
   if os.name == "posix":
     os.system ("clear")
   elif os.name == "ce" or os.name == "nt" or os.name == "dos":
     os.system ("cls")
 
+gato = {
+  "1" : "-", "2" : "-", "3" : "-", 
+  "4" : "-", "5" : "-", "6" : "-", 
+  "7" : "-", "8" : "-", "9" : "-", 
+}
+
 print('Juego Titc-Tac-Toe (Gato)')
 
-print(' x│o│o')
+print(' '+ gato["1"] + '│'+ gato["2"] + '│' + gato["3"])
 print(' ─┼─┼─')
-print(' x│o│o')
+print(' '+ gato["4"] + '│'+ gato["5"] + '│' + gato["6"])
 print(' ─┼─┼─')
-print(' x│o│o')
+print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"])
 
-time.sleep(1)
+time.sleep(5)
 
 borrarPantalla()
