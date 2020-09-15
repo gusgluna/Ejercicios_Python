@@ -8,20 +8,20 @@ def borrarPantalla():
     os.system ("cls")
 
 gato = {
-  "1" : "1", "2" : "2", "3" : "3", 
-  "4" : "4", "5" : "5", "6" : "6", 
-  "7" : "7", "8" : "8", "9" : "9", 
+  "1" : "-", "2" : "-", "3" : "-", 
+  "4" : "-", "5" : "-", "6" : "-", 
+  "7" : "-", "8" : "-", "9" : "-", 
 }
 
-print('Juego Titc-Tac-Toe (Gato)')
-print(' Juego           Posiciones')
-print('═══════════════════════════════════')
-print(' '+ gato["1"] + '│'+ gato["2"] + '│' + gato["3"])
-print(' ─┼─┼─')
-print(' '+ gato["4"] + '│'+ gato["5"] + '│' + gato["6"])
-print(' ─┼─┼─')
-print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"])
+print('Titc-Tac-Toe (Gato)')
+print(' Juego   Posiciones')
+print('════════════════════')
+print(' '+ gato["1"] + '│'+ gato["2"] + '│' + gato["3"]+ "   1│2│3")
+print(' ─┼─┼─   ─┼─┼─')
+print(' '+ gato["4"] + '│'+ gato["5"] + '│' + gato["6"]+ "   4│5│6")
+print(' ─┼─┼─   ─┼─┼─')
+print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"]+ "   7│8│9")
 
-time.sleep(5)
+#time.sleep(5)
 
-borrarPantalla()
+#borrarPantalla()
