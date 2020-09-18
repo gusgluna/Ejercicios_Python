@@ -10,6 +10,7 @@ gato = {
 
 def app():
   imprimirjuego()
+  jugadaO()
 
 #Funcion que detecta el sistema operativo y borra la consola
 def borrarPantalla():
@@ -28,9 +29,15 @@ def imprimirjuego():
   print(' ─┼─┼─   ─┼─┼─')
   print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"]+ "   7│8│9")
 
+def jugadaO():
+  marca = input('Jugador O escribe el numero doned quieres marcar:')
+  gato[marca] = 'O'
+  borrarPantalla()
+  imprimirjuego()
+
+
 #time.sleep(5)
 
-#borrarPantalla()
 
 
 app()
