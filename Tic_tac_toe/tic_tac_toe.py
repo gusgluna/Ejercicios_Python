@@ -7,10 +7,14 @@ gato = {
   "7" : "-", "8" : "-", "9" : "-", 
 }
 
+ganador = False #Variable que comprueba si hay un ganador
+
+
+
 
 def app():
   imprimirjuego()
-  jugadaO()
+  victoria()
 
 #Funcion que detecta el sistema operativo y borra la consola
 def borrarPantalla():
@@ -35,9 +39,15 @@ def jugadaO():
   borrarPantalla()
   imprimirjuego()
 
+#Funcion que comprueba si hay ganador
+def victoria():
+  while ganador == False:
+    jugadaO()
+
 
 #time.sleep(5)
 
+borrarPantalla()
 
 
 app()
