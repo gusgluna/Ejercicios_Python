@@ -1,5 +1,9 @@
 import os
 import time
+import random
+
+
+contador = random.randint(1,2)
 
 gato = {
   "1" : "-", "2" : "-", "3" : "-", 
@@ -33,16 +37,34 @@ def imprimirjuego():
   print(' ─┼─┼─   ─┼─┼─')
   print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"]+ "   7│8│9")
 
+#Funcion para alternar Jugadas
+def siguientejugada():
+  global contador
+  if contador % 2 == 0:
+    jugadaO()
+    contador = contador + 1
+  else:
+    jugadaX()
+    contador = contador + 1
+
+
+
 def jugadaO():
   marca = input('Jugador O escribe el numero doned quieres marcar:')
   gato[marca] = 'O'
   borrarPantalla()
   imprimirjuego()
 
+def jugadaX():
+  marca = input('Jugador X escribe el numero doned quieres marcar:')
+  gato[marca] = 'X'
+  borrarPantalla()
+  imprimirjuego()
+
 #Funcion que comprueba si hay ganador
 def victoria():
   while ganador == False:
-    jugadaO()
+    siguientejugada()
 
 
 #time.sleep(5)
