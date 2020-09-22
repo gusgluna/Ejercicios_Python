@@ -18,7 +18,7 @@ ganador = False #Variable que comprueba si hay un ganador
 
 def app():
   imprimirjuego()
-  victoria()
+  siguientejugada()
 
 #Funcion que detecta el sistema operativo y borra la consola
 def borrarPantalla():
@@ -36,35 +36,52 @@ def imprimirjuego():
   print(' '+ gato["4"] + '│'+ gato["5"] + '│' + gato["6"]+ "   4│5│6")
   print(' ─┼─┼─   ─┼─┼─')
   print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"]+ "   7│8│9")
+  print(ganador)
 
 #Funcion para alternar Jugadas
 def siguientejugada():
   global contador
-  if contador % 2 == 0:
-    jugadaO()
-    contador = contador + 1
-  else:
-    jugadaX()
-    contador = contador + 1
+  while ganador == False:
+    if contador % 2 == 0:
+      jugadaO()
+      ganador_1()
+      contador = contador + 1
+    else:
+      jugadaX()
+      ganador_1()
+      contador = contador + 1
 
 
 
 def jugadaO():
-  marca = input('Jugador O escribe el numero doned quieres marcar:')
+  marca = input('Jugador O escribe el numero donde quieres marcar:')
   gato[marca] = 'O'
+  ganador_1()
   borrarPantalla()
   imprimirjuego()
 
 def jugadaX():
-  marca = input('Jugador X escribe el numero doned quieres marcar:')
-  gato[marca] = 'X'
-  borrarPantalla()
-  imprimirjuego()
+  marca = input('Jugador X escribe el numero donde quieres marcar:')
+  if gato[marca] == '-':
+    gato[marca] = 'X'
+    ganador_1()
+    borrarPantalla()
+    imprimirjuego()
+  else:
+    print('Selecciona una casilla vacia');
+    time.sleep(1)
+    borrarPantalla()
+    imprimirjuego()
+    jugadaX()
 
-#Funcion que comprueba si hay ganador
-def victoria():
-  while ganador == False:
-    siguientejugada()
+
+
+#Funcion que detecta quien gano
+def ganador_1():
+  global ganador
+  if gato["1"] == "X" and gato["2"] == "X" and gato["3"] == "X":
+    ganador = True
+    
 
 
 #time.sleep(5)
