@@ -11,7 +11,7 @@ gato = {
   "7" : "-", "8" : "-", "9" : "-", 
 }
 
-ganador = False #Variable que comprueba si hay un ganador
+ganador ="ninguno" #Variable que comprueba si hay un ganador
 
 
 
@@ -41,14 +41,12 @@ def imprimirjuego():
 #Funcion para alternar Jugadas
 def siguientejugada():
   global contador
-  while ganador == False:
+  while ganador == "ninguno":
     if contador % 2 == 0:
       jugadaO()
-      ganador_1()
       contador = contador + 1
     else:
       jugadaX()
-      ganador_1()
       contador = contador + 1
 
 
@@ -56,7 +54,6 @@ def siguientejugada():
 def jugadaO():
   marca = input('Jugador O escribe el numero donde quieres marcar:')
   gato[marca] = 'O'
-  ganador_1()
   borrarPantalla()
   imprimirjuego()
 
@@ -64,7 +61,7 @@ def jugadaX():
   marca = input('Jugador X escribe el numero donde quieres marcar:')
   if gato[marca] == '-':
     gato[marca] = 'X'
-    ganador_1()
+    gana_X()
     borrarPantalla()
     imprimirjuego()
   else:
@@ -77,10 +74,13 @@ def jugadaX():
 
 
 #Funcion que detecta quien gano
-def ganador_1():
+def gana_X():
   global ganador
   if gato["1"] == "X" and gato["2"] == "X" and gato["3"] == "X":
-    ganador = True
+    ganador = "Gana X"
+  elif gato["4"] == "X" and gato["5"] == "X" and gato["6"] == "X":
+    ganador = "Gana X"
+
     
 
 
