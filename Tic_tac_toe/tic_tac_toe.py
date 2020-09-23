@@ -47,6 +47,10 @@ def siguientejugada():
     else:
       jugadaX()
       contador = contador + 1
+  if ganador == "Gana X":
+    print('*** El Ganador es X ***')
+  if ganador == "Gana O":
+    print('*** El Ganador es O ***')
 
 
 
@@ -58,24 +62,26 @@ def jugadaO():
 
 def jugadaX():
   marca = input('Jugador X escribe el numero donde quieres marcar:')
-  if gato[marca] == '-':
-    gato[marca] = 'X'
-    gana_X()
-    borrarPantalla()
-    imprimirjuego()
+  valores = ("1", "2", "3", "4", "5", "6", "7", "8", "9")
+  if marca in valores:
+    if gato[marca] == '-':
+      gato[marca] = 'X'
+      gana_X()
+      borrarPantalla()
+      imprimirjuego()
+    else:
+      print('Selecciona una casilla vacia');
+      time.sleep(1)
+      borrarPantalla()
+      imprimirjuego()
+      jugadaX()
   else:
-    print('Selecciona una casilla vacia');
-    time.sleep(1)
-    borrarPantalla()
-    imprimirjuego()
-    jugadaX()
-
-
+    print("Solo puedes ingresar numeros enteros del 1 al 9")
 
 #Funcion que detecta quien gano
 def gana_X():
   global ganador
-  if (gato["1"] == "X" and gato["2"] == "X" and gato["3"] == "X") or (gato["4"] == "X" and gato["5"] == "X" and gato["6"] == "X") or (gato["7"] == "X" and gato["8"] == "X" and gato["9"] == "X") or (gato["1"] == "X" and gato["4"] == "X" and gato["7"] == "X"):
+  if (gato["1"] == "X" and gato["2"] == "X" and gato["3"] == "X") or (gato["4"] == "X" and gato["5"] == "X" and gato["6"] == "X") or (gato["7"] == "X" and gato["8"] == "X" and gato["9"] == "X") or (gato["1"] == "X" and gato["4"] == "X" and gato["7"] == "X") or (gato["2"] == "X" and gato["5"] == "X" and gato["8"] == "X"):
     ganador = "Gana X"
 
     
