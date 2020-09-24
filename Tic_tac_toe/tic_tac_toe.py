@@ -106,6 +106,18 @@ def gana_X():
     ganador = "Gana X"
   if gato["4"] == "X" and gato["5"] == "X" and gato["6"] == "X":
     ganador = "Gana X"
+  if gato["7"] == "X" and gato["8"] == "X" and gato["9"] == "X":
+    ganador = "Gana X"
+  if gato["1"] == "X" and gato["4"] == "X" and gato["7"] == "X":
+    ganador = "Gana X"
+  if gato["2"] == "X" and gato["5"] == "X" and gato["8"] == "X":
+    ganador = "Gana X"
+  if gato["3"] == "X" and gato["6"] == "X" and gato["9"] == "X":
+    ganador = "Gana X"
+  if gato["1"] == "X" and gato["5"] == "X" and gato["9"] == "X":
+    ganador = "Gana X"
+  if gato["3"] == "X" and gato["5"] == "X" and gato["7"] == "X":
+    ganador = "Gana X"
 
     
 
