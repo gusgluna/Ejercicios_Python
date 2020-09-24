@@ -35,8 +35,7 @@ def imprimirjuego():
   print(' '+ gato["4"] + '│'+ gato["5"] + '│' + gato["6"]+ "   4│5│6")
   print(' ─┼─┼─   ─┼─┼─')
   print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"]+ "   7│8│9")
-#  print("ganador: " + ganador)
-
+  
 #Funcion para alternar Jugadas
 def siguientejugada():
   global contador
@@ -52,14 +51,13 @@ def siguientejugada():
   if ganador == "Gana O":
     print('*** El Ganador es O ***')
 
-
-
 def jugadaO():
   marca = input('Jugador O escribe el numero donde quieres marcar:')
   valores = ("1", "2", "3", "4", "5", "6", "7", "8", "9")
   if marca in valores:
     if gato[marca] == '-':
       gato[marca] = 'O'
+      gana_O()
       borrarPantalla()
       imprimirjuego()
     else:
@@ -74,8 +72,6 @@ def jugadaO():
     borrarPantalla()
     imprimirjuego()
     jugadaO()
-
-
 
 def jugadaX():
   marca = input('Jugador X escribe el numero donde quieres marcar:')
@@ -119,12 +115,25 @@ def gana_X():
   if gato["3"] == "X" and gato["5"] == "X" and gato["7"] == "X":
     ganador = "Gana X"
 
-    
-
-
-#time.sleep(5)
+def gana_O():
+  global ganador
+  if gato["1"] == "O" and gato["2"] == "O" and gato["3"] == "O":
+    ganador = "Gana O"
+  if gato["4"] == "O" and gato["5"] == "O" and gato["6"] == "O":
+    ganador = "Gana O"
+  if gato["7"] == "O" and gato["8"] == "O" and gato["9"] == "O":
+    ganador = "Gana O"
+  if gato["1"] == "O" and gato["4"] == "O" and gato["O"] == "O":
+    ganador = "Gana O"
+  if gato["2"] == "O" and gato["5"] == "O" and gato["8"] == "O":
+    ganador = "Gana O"
+  if gato["3"] == "O" and gato["6"] == "O" and gato["9"] == "O":
+    ganador = "Gana O"
+  if gato["1"] == "O" and gato["5"] == "O" and gato["9"] == "O":
+    ganador = "Gana O"
+  if gato["3"] == "O" and gato["5"] == "O" and gato["7"] == "O":
+    ganador = "Gana O"
 
 borrarPantalla()
-
 
 app()
