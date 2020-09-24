@@ -2,18 +2,13 @@ import os
 import time
 import random
 
-contador = random.randint(1,2)
-
+contador = random.randint(1,2) #Variable utilizada para alternar las jugadas.
+ganador ="ninguno" #Variable que comprueba si hay un ganador
 gato = {
   "1" : "-", "2" : "-", "3" : "-", 
   "4" : "-", "5" : "-", "6" : "-", 
   "7" : "-", "8" : "-", "9" : "-", 
 }
-
-ganador ="ninguno" #Variable que comprueba si hay un ganador
-
-
-
 
 def app():
   imprimirjuego()
@@ -25,7 +20,8 @@ def borrarPantalla():
     os.system ("clear")
   elif os.name == "ce" or os.name == "nt" or os.name == "dos":
     os.system ("cls")
-
+    
+#Funcion que Imprime el juego en la consola
 def imprimirjuego():
   print('Titc-Tac-Toe (Gato)')
   print(' Juego  Posiciones')
@@ -36,7 +32,7 @@ def imprimirjuego():
   print(' ─┼─┼─   ─┼─┼─')
   print(' '+ gato["7"] + '│'+ gato["8"] + '│' + gato["9"]+ "   7│8│9")
   
-#Funcion para alternar Jugadas
+#Funcion para alternar Jugadas y detecta cual es el ganador
 def siguientejugada():
   global contador
   while ganador == "ninguno":
