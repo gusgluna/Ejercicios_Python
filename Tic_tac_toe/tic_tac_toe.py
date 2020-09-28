@@ -57,7 +57,7 @@ def jugadaO():
       borrarPantalla()
       imprimirjuego()
     else:
-      print('Selecciona una casilla vacia');
+      print('Selecciona una casilla vacia')
       time.sleep(1)
       borrarPantalla()
       imprimirjuego()
@@ -79,7 +79,7 @@ def jugadaX():
       borrarPantalla()
       imprimirjuego()
     else:
-      print('Selecciona una casilla vacia');
+      print('Selecciona una casilla vacia')
       time.sleep(1)
       borrarPantalla()
       imprimirjuego()
