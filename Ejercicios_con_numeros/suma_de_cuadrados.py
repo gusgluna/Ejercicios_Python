@@ -1,5 +1,5 @@
 '''
-Crear un programa que teng una funcion que reciba una lista de numeros, 
+Crear un programa que tenga una funcion que reciba una lista de numeros, 
 y nos regrese la suma de sus cuadrados
 Por ejemplo: [0,1,2]= 0^2 + 1^2 + 2^2 = 5
 '''
