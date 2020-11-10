@@ -8,6 +8,7 @@ invert([]) == []
 
 '''
 
+'''
 def invert(lst):
     n = 0
     ilst=[]
@@ -17,3 +18,9 @@ def invert(lst):
     print(ilst)
 
 invert([-12,4,-3,-5])
+'''
+
+def invert(lst):
+    print([-i for i in lst])
+    
+invert([-3,2,8,-5,-10])
